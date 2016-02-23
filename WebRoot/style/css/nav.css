@@ -1,0 +1,124 @@
+body{
+	color:#FFF;
+	font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light";
+	background-image:url(../pic/fleetBg.jpg);
+	list-style-type:none;
+	overflow:auto;
+	} 
+#nav_header{
+	color:#FFF;
+	font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light";
+	}
+#name{
+	font-size:24px;
+	position:absolute;
+	top:8px;
+	left:160px
+	}
+#login_header{
+	height: 45px;
+	width: 100%;
+	background-image:url(../pic/topbunner.png);
+	position:absolute;
+	top:0px;
+	right:0px;
+	left:0px;
+	}
+		
+#logo{
+	z-index:1;
+	position:absolute;
+	top:0px;
+	left:20px;
+	border:hidden;
+	}
+#nav_body{
+	width:1260px;
+	height:540px;
+	position:absolute;
+	top:100px;
+	left:20px;
+	}
+#body_left{
+	width:200px;
+	height:520px;
+	position:absolute;
+	top:20px;
+	float:left;
+	background-image:url(../pic/navbg.png);
+	border-radius:3px;
+	
+	}
+#body_right{
+	width: 1030px;
+	height: 550px;
+	position: absolute;
+	top: -10px;
+	left: 230px;
+	border-radius: 3px;
+	border:none;
+	border-top:2px solid #e24722;
+	background-image:url(../pic/navbg.png);
+	}
+iframe{
+	width:1030;
+	height:550;
+	}
+#nav_banner{
+	margin: 20px 0 0 -10px;
+	padding: 3px 0 5px 0;
+	background: #424242;
+	font-size:18px;
+	font-weight:400;
+	width:220px;
+	text-align:center;
+	}
+#below_banner{
+	width:220px;
+	height:2px;
+	margin:0 0 0 -10px;
+	padding:0px;
+	background-image:url(../pic/belowbanner.png);
+	}
+#nav_list{
+	position:absolute;
+	margin:50px 0 0 -20px;
+	list-style-type:none;
+	width:160px;
+	text-align:center; 
+	}
+#nav_list li{
+	padding:5px 0 5px 0;
+	margin:0;
+	}
+#nav_list li:hover {
+	background-image:url(../pic/navlink.png);
+	}
+hr{
+	border:none;
+	border-top:1px solid #e24722;
+	height:0;}
+	
+#nav_list li a{
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 3px;
+	display:block;
+	
+	}
+#nav_list li a:link {
+	color: #000000;
+	text-decoration: none;  
+   }  
+#nav_list li a:visited {  
+   text-decoration: none;  
+   color: #000000;  
+   }  
+#nav_list li a:hover {  
+   text-decoration: none;
+   color: #e24722;  
+   }  
+#nav_list li a:active {  
+   text-decoration: none;  
+   color: #e24722;  
+   }

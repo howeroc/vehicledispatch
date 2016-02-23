@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+ "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring"/>
+	
+	<constant name="struts.devMode" value="false"/>
+	
+	<package name="main" extends="struts-default">
+	
+	<global-results>
+
+		<result name="success">/pages/success.jsp</result>
+		
+		<result name="fail">/pages/fail.jsp</result>
+		
+	</global-results>
+	
+		<action name="nav" class="com.howe.vehicledispatch.action.NavAction">
+			
+			<result name="usersearch">/pages/user/usersearch.jsp</result>
+			
+			<result name="driversearch">/pages/driver/driversearch.jsp</result>
+			
+			<result name="carsearch">/pages/car/carsearch.jsp</result>
+			
+			<result name="tasksearch">/pages/task/tasksearch.jsp</result>
+			
+			<result name="refuelsearch">/pages/refuel/refuelsearch.jsp</result>
+			
+			<result name="fixsearch">/pages/fix/fixsearch.jsp</result>
+			
+			<result name="accidentsearch">/pages/accident/accidentsearch.jsp</result>
+			
+		</action>
+	
+		<action name="user" class="com.howe.vehicledispatch.action.UserAction">
+			
+			<result name="add">/pages/user/useradd.jsp</result>
+			
+			<result name="login">/login.jsp</result>
+			
+			<result name="search">/pages/user/usersearch.jsp</result>
+			
+			<result name="edit">/pages/user/useredit.jsp</result>
+			
+			<result name="nav">/pages/nav.jsp</result>
+			<result name="nav2">/pages/nav2.jsp</result>
+			
+			
+		</action>
+		
+		<action name="driver" class="com.howe.vehicledispatch.action.DriverAction">
+			
+			<result name="add">/pages/driver/driveradd.jsp</result>
+			
+			<result name="search">/pages/driver/driversearch.jsp</result>
+			
+			<result name="edit">/pages/driver/driveredit.jsp</result>
+			
+			<result name="listall">/pages/driver/driverlist.jsp</result>
+			
+		</action>
+		
+		<action name="car" class="com.howe.vehicledispatch.action.CarAction">
+			
+			<result name="add">/pages/car/caradd.jsp</result>
+			
+			<result name="search">/pages/car/carsearch.jsp</result>
+			
+			<result name="edit">/pages/car/caredit.jsp</result>
+			
+			<result name="listall">/pages/car/carlist.jsp</result>
+			
+		</action>
+		
+		<action name="task" class="com.howe.vehicledispatch.action.TaskAction">
+			
+			<result name="add">/pages/task/taskadd.jsp</result>
+			
+			<result name="search">/pages/task/tasksearch.jsp</result>
+			
+			<result name="edit">/pages/task/taskedit.jsp</result>
+			
+			<result name="listall">/pages/task/tasklist.jsp</result>
+			<result name="test">/test.jsp</result>
+		</action>
+		
+		<action name="refuel" class="com.howe.vehicledispatch.action.RefuelAction">
+			
+			<result name="add">/pages/refuel/refueladd.jsp</result>
+			
+			<result name="login">/login.jsp</result>
+			
+			<result name="nav">/pages/nav.jsp</result>
+			
+			<result name="search">/pages/refuel/refuelsearch.jsp</result>
+			
+			<result name="edit">/pages/refuel/refueledit.jsp</result>
+			
+			<result name="listallusers">/pages/refuel/refuellist.jsp</result>
+		</action>
+		
+		<action name="fix" class="com.howe.vehicledispatch.action.FixAciton">
+			
+			<result name="add">/pages/fix/fixadd.jsp</result>
+			
+			<result name="login">/login.jsp</result>
+			
+			<result name="nav">/pages/nav.jsp</result>
+			
+			<result name="search">/pages/fix/fixsearch.jsp</result>
+			
+			<result name="edit">/pages/fix/fixedit.jsp</result>
+			
+			<result name="listallusers">/pages/fix/fixlist.jsp</result>
+		</action>
+		
+		<action name="accident" class="com.howe.vehicledispatch.action.AccidentAction">
+			
+			<result name="add">/pages/accident/accidentadd.jsp</result>
+			
+			<result name="login">/login.jsp</result>
+			
+			<result name="nav">/pages/nav.jsp</result>
+			
+			<result name="search">/pages/accident/accidentsearch.jsp</result>
+			
+			<result name="edit">/pages/accident/accidentdit.jsp</result>
+			
+			<result name="listallusers">/pages/accident/accidentlist.jsp</result>
+		</action>
+	</package>
+	
+</struts>    

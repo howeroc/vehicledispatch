@@ -1,0 +1,215 @@
+body {
+	font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "黑体", "楷体", "新宋体";
+	font-size:16px;
+	width:1000px;
+	overflow:auto;
+	text-align:center;
+	}
+#top_bar{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:30px;
+	background-color:#424242;}
+#top_nav{
+	font-size:16px;
+	margin:0;
+	}
+#top_nav li{
+	list-style:none;
+	padding:0;
+	margin:0;
+	float:left;
+	}
+#top_nav li a {
+	display:block; /* 将链接设为块级元素 */
+	width:150px; /* 设置宽度 */
+	height:30px; /* 设置高度 */
+	line-height:30px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+	text-align:center; /* 居中对齐文字 */
+	background:#3A4953; /* 设置背景色 */
+	color:#fff; /* 设置文字颜色 */
+	text-decoration:none; /* 去掉下划线 */
+	border-right:1px solid #000; /* 在左侧加上分隔线 */
+}
+#top_nav li a:hover {
+	background:#146C9C; /* 变换背景色 */
+	color:#fff; /* 变换文字颜色 */
+}
+#top_nav li a.last {
+	border-right:0; /* 去掉左侧边框 */
+}
+/*搜索框和结果框的div*/
+
+#search{
+	padding-top:50px;
+	width:900px
+	margin: 0 auto;
+	text-align:center;
+	}
+	
+#search fieldset{
+	margin:0 auto;
+	width:900px;
+	text-align:center;
+	border: 1px solid #e24722;
+/* 	background-image:url(../pic/inputbg.png); */
+	height:150px;
+	background-color:#424242;
+	color:#FFF;
+	}
+legend{
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	background-color:#424242;
+	}
+
+#search fieldset p input{
+			font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light","Times New Roman", Times, serif;
+			border: 1px solid #aaa;
+			padding: 2px;
+			box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+			font-size: 13px;
+			border-radius: 3px;
+			width:100px;
+			height:25px;
+			}
+#search fieldset p select{
+			font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light","Times New Roman", Times, serif;
+			border: 1px solid #aaa;
+			padding: 2px;
+			box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+			font-size: 13px;
+			border-radius: 3px;
+			width:100px;
+			height:25px;
+			}
+			
+/*搜索内容显示表格样式*/
+#table_wrap{
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	}
+	
+#content_table {
+	margin:0 0 30px 0;
+	border-collapse:collapse;
+	border: 1px #e24722 solid;
+	font-size:14px;
+	background-color:#d9dada;
+	width:800px;
+	}
+	
+#content_table tr td{
+	text-align:center;
+	border:1px solid #3A4953;
+	}
+	
+#content_table tr:hover{
+	background-color:#3a4953;
+	color:#FFF;
+	}
+	
+/*分页导航样式*/
+#page_bar{
+	margin:0;
+	height:25px;
+	width:100%;
+	background-color:#424242;
+	text-align:center;
+	position: fixed;
+    bottom: 0px;
+    z-index: 500;
+	}
+#bar_center{
+	width:700px;
+	margin:0 auto;
+	}
+#page_nav{
+	font-size:14px;
+	margin:0 auto;
+	}
+#page_nav li{
+	list-style:none;
+	padding:0;
+	margin:0;
+	float:left;
+	display:block;
+	width:100px; /* 设置宽度 */
+	height:25px; /* 设置高度 */
+	line-height:25px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+	text-align:center; /* 居中对齐文字 */
+	background:#3A4953; /* 设置背景色 */
+	color:#fff; /* 设置文字颜色 */
+	text-decoration:none; /* 去掉下划线 */
+	border-right:1px solid #000; /* 在左侧加上分隔线 */
+	}
+	
+#page_nav li a{
+	display:block; /* 将链接设为块级元素 */
+	width:100px; /* 设置宽度 */
+	height:25px; /* 设置高度 */
+	line-height:25px; /* 设置行高，将行高和高度设置同一个值，可以让单行文本垂直居中 */
+	text-align:center; /* 居中对齐文字 */
+	background:#3A4953; /* 设置背景色 */
+	color:#fff; /* 设置文字颜色 */
+	text-decoration:none; /* 去掉下划线 */
+	border-right:1px solid #000; /* 在左侧加上分隔线 */
+	}
+	
+#page_nav li a:hover {
+	background:#146C9C; /* 变换背景色 */
+	color:#fff; /* 变换文字颜色 */
+	}
+	
+#page_nav li a.last{
+	border-right:0; /* 去掉左侧边框 */
+	}
+	
+/*通用样式*/
+.user_button{
+	font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light", "黑体", "微软雅黑", "楷体", "新宋体";
+	width:80px;
+	font-size: 13px;
+	vertical-align: middle;
+	padding: 1px 8px 1px 8px;
+	border: 1px solid #a2a2a2;
+	color:#424242;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: -webkit-linear-gradient(#fff, #e5e5e5);
+	background: -moz-linear-gradient(#fff, #e5e5e5);
+	background: -ms-linear-gradient(#fff, #e5e5e5);
+	background: -o-linear-gradient(#fff, #e5e5e5);
+	background: linear-gradient(#fff, #e5e5e5);
+	-pie-background: linear-gradient(#fff, #e5e5e5);
+}
+/*--------------------------useradd页面--------------------------*/
+#add_body{
+	padding-top:50px;
+	} 
+#add_body fieldset{
+	marigin:0 auto;
+	width:350px;
+	margin:0 auto;
+	text-align:left;
+	border: 1px solid #e24722;
+	background-color:#424242;
+	color:#FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+#add_body fieldset input,select,radio{
+			font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light","Times New Roman", Times, serif;
+			border: 1px solid #aaa;
+			padding: 3px;
+			box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+			font-size: 13px;
+			border-radius: 3px;
+	}
